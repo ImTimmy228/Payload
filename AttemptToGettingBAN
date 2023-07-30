@@ -1,9 +1,9 @@
-wait(0.33)
-loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Infinite%20Yield.txt"))()
+wait(0.03)
+--loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Infinite%20Yield.txt"))()
 wait()
 print("HELOINFDOne")
-loadstring(game:HttpGet("https://shattered-gang.lol/scripts/fe/touch_fling.lua"))()
-wait(1)
+--loadstring(game:HttpGet("https://shattered-gang.lol/scripts/fe/touch_fling.lua"))()
+wait(.03)
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16 * 2 / 4 * 1.25 * 16 * 2 -- Gives 160 Speed
 print("U have")
 print(16 * 2 / 4 * 1.25 * 16 * 2)
@@ -17,29 +17,15 @@ print("----------------")
 print("And also:")
 print(50 * 2 / 4 * 1.5 * 50.80)
 print("JumpPower")
-while wait(0.05) do
-    for i, v in pairs(game:GetService("Players"):GetChildren()) do
-        if v ~= game:GetService("Players").LocalPlayer then
-            game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame =
-                v.Character.HumanoidRootPart.CFrame
-        end
-    end
-end
-while wait(.1) do
-    game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(
-        " ⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻",
-        "All"
-    )
-end
-wait(4)
+
 local c = game.Players.LocalPlayer.Character
 local op = c.Parent
 c.Parent = nil
 c.HumanoidRootPart.Parent = nil
 c.Parent = op
-wait(0.2)
+wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart:BreakJoints()
-wait(0.2)
+wait(0.1)
 local player = game.Players.localPlayer
 local char = player.Character
 local Hum = char.Humanoid
@@ -47,14 +33,14 @@ local newhum = Instance.new("Humanoid")
 Hum.Parent = char.Health
 char.Health:Destroy()
 newhum.Parent = char
-wait(0.2)
+wait(0.15)
 local c = game.Players.LocalPlayer.Character
 c.Parent = nil
 c.HumanoidRootPart:Destroy()
 c.Parent = game.workspace
-wait(0.2)
+wait(0.15)
 sethiddenproperty(game.Players.LocalPlayer, "Parent", nil)
-wait(0.2)
+wait(0.15)
 local C = game.Players.LocalPlayer.Character
 C.Parent = nil
 C.HumanoidRootPart:Destroy()
@@ -73,9 +59,21 @@ A.__index =
         return B(self, key)
     end
 )
-wait(2)
+wait(.2)
 
-while wait(2) do
+while wait(.33) do
     game:GetService("GuiService"):ClearError()
+ game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(
+        " ⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻",
+        "All"
+    )
+    for i, v in pairs(game:GetService("Players"):GetChildren()) do
+        if v ~= game:GetService("Players").LocalPlayer then
+            game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame =
+                v.Character.HumanoidRootPart.CFrame
+        end
+    end
 end
 -- Re-execute if broke!
+
+wait(1)
